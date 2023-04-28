@@ -41,14 +41,32 @@ TEMPLATES=[
 
 DATABASE={
     'default':{
-        'ENGINE':'django.db.backends.mysql.1.43.0' 
-    
+        'ENGINE':'django.db.backends.mysql.1.43.0',
+        'NAME': BASE_DIR/'db.mysql.1.43.0',
+        'USER':'root',
+        'PASSWORD':'Mochiletsgo2023',
+        'HOST':'HTTPS:/local/mochiletsgo.com/',
+        'PORT':"5800"
     }
 }
 
-#todo:
-#averiguar la version de mysql 
-#averiguar el hosting gratis  https://cloud.google.com/solutions/web-hosting?utm_source=google&utm_medium=cpc&utm_campaign=latam-CO-all-es-dr-SKWS-all-all-trial-e-dr-1605194-LUAC0014807&utm_content=text-ad-none-any-DEV_c-CRE_517752295400-ADGP_Hybrid%20%7C%20SKWS%20-%20EXA%20%7C%20Txt%20~%20App-Modernization_Host-KWID_43700063329284571-kwd-89020569&utm_term=KW_hosting%20gratis-ST_hosting%20gratis&gclid=CjwKCAjwuqiiBhBtEiwATgvixL4TR5ApPjwyF7h7W9fb_wyG9yJM3ooUX01Ix86ibcUSlYjUwfpArRoCtVkQAvD_BwE&gclsrc=aw.ds
-#montar esto en github
-#hacer la base de datos 
-#hacer los formularios
+AUTH_PASSWORD_VALIDATORS=[
+    {
+        'VALIDATOR_NUMERICPASSWORD':'django.contrib.auth.password_validation.NumericPasswordValidator', #Validar que dentro de la contrasena tenga numeros
+        'VALIDATOR_LENGTHOFPASSWORD':'django.contrib.auth.password_validation.MinNumLengthValidator', # Validar la longitud de la contrasena
+        'VALIDATOR_EMAIL':'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  #Validar que sea similiar con el correo (user)
+        'VALIDATOR_ALPHANUMERIC': 'django.contrib.auth.password_validation.AlphabetValidator',         #Validar que tenga numeros y letas
+        'VALIDATOR_CAPS_LOWER': 'django.contrib.auth.password_validation.CapsLowerValidator',           # Validar si contrasena tiene caps or lower case letters
+    }
+]
+LANGUAGUE_CODE='es'
+
+TIME_ZONE='America/Bogota'
+
+DATE='GMT -5'
+DATE=True
+
+EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend' 
+
+STATIC_URL='/static/'
+STATICFILES_DIRS=[os.Path]
