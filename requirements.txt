@@ -1,0 +1,3 @@
+# Frontend: Debe de asignar el orden del home y las otras paginas auxiliar 
+# formularios hacer el orden que tenemos dentro de formularios.py
+# tenemos que mirar en la parte en el campo de phone numeber  , terminos y condiciones 

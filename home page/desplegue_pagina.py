@@ -13,8 +13,8 @@ INSTALLED_APPS=[
     'django.contrib.messages',
     'django.contrib.sessions',
     'django.contrib.request',
-    'django.contrib.debug'
-    'users_app'
+    'django.contrib.debug',
+    'django.contrib.users_app'
 ]
 
 CSRF_TRUSTED_ORIGINS=['https.local/mochiletsgo.com'] # aqui necesitamos un hosting para poder enlazar la pagina
@@ -33,7 +33,8 @@ TEMPLATES=[
                 'django.template.context_processors.admin',
                 'django.template.context_processors.auth',
                 'django.template.context_processors.messages',
-                'django.template.context_processors.sessions'
+                'django.template.context_processors.sessions',
+                'django.template.context_processors.date',
             ]
         }
     }
@@ -41,7 +42,7 @@ TEMPLATES=[
 
 DATABASE={
     'default':{
-        'ENGINE':'django.db.backends.mysql.1.43.0',
+        'ENGINE':'django.db.backends.mysql.1.43.0', # estamos haciendo enlance 
         'NAME': BASE_DIR/'db.mysql.1.43.0',
         'USER':'root',
         'PASSWORD':'Mochiletsgo2023',
@@ -49,14 +50,14 @@ DATABASE={
         'PORT':"5800"
     }
 }
-
+#unit test
 AUTH_PASSWORD_VALIDATORS=[
     {
         'VALIDATOR_NUMERICPASSWORD':'django.contrib.auth.password_validation.NumericPasswordValidator', #Validar que dentro de la contrasena tenga numeros
         'VALIDATOR_LENGTHOFPASSWORD':'django.contrib.auth.password_validation.MinNumLengthValidator', # Validar la longitud de la contrasena
         'VALIDATOR_EMAIL':'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',  #Validar que sea similiar con el correo (user)
         'VALIDATOR_ALPHANUMERIC': 'django.contrib.auth.password_validation.AlphabetValidator',         #Validar que tenga numeros y letas
-        'VALIDATOR_CAPS_LOWER': 'django.contrib.auth.password_validation.CapsLowerValidator',           # Validar si contrasena tiene caps or lower case letters
+        'VALIDATOR_CAPS_LOWER': 'django.contrib.auth.password_validation.CapsLowerValidator',          # Validar si contrasena tiene caps or lower case letters
     }
 ]
 LANGUAGUE_CODE='es'
@@ -69,4 +70,6 @@ DATE=True
 EMAIL_BACKEND='django.core.mail.backends.console.EmailBackend' 
 
 STATIC_URL='/static/'
-STATICFILES_DIRS=[os.Path]
+STATICFILES_DIRS=[os.path.join(BASE_DIR, 'static')] # administra todo los comandos que tenemos en el desplegue
+
+DEFAULT_AUTO_FIELD='django.db.models.BigAutoField' # Esta haciendo un auto field de los campos en la base de datos

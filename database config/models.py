@@ -1,0 +1,1 @@
+from django.db import models # Va ejectuar toda las tareas que hace en el despleiguede 
