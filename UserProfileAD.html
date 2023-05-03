@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochi Let's Go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(https://64.media.tumblr.com/9f7ae588ad2063f2ca884fc1e66efe32/b4c0e53ced51bcc3-c4/s1280x1920/c4a6aee11b5c1118bd08cfbbe522fb7c7b832358.pnj);
+            background-size: cover;
+            margin: 0px;
+        }
+
+        header {
+            display: flex;
+            line-height: 0;
+            justify-content: flex-end;
+            background-color: #EDEAE4;
+            color: #EDE8E3;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 5px 1%;
+            align-items: center;
+            height: 85 px;
+            font-family: 'Bakbak One'
+        }
+
+        .header .navlinks {
+            list-style: none;
+        }
+
+        .header .navlinks li {
+            display: inline-block;
+            padding: 0 20px;
+        }
+
+        .header .navlinks a {
+            font-size: 700;
+            color: #97A88A;
+            text-decoration: none;
+        }
+
+        .container {
+            border-radius: 30px;
+            background-color: #57714E;
+            width: 650px;
+            height: 570px;
+            margin: auto;
+            position: absolute;
+            top: 165px;
+            left: 425px;
+            
+        }
+
+        h2 {
+            color: #A68037;
+            font-family: 'Bakbak One';
+            font-size: 30px;
+            justify-content: left;
+            margin-left: 10%;
+        }
+
+        p {
+            color: white;
+            font-family: 'Bakbak One'
+            
+        }
+        form, p, img {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        input {
+            background-color: #57714E;
+            width: 423px;
+            height: 45px;
+            text-align: center;
+            margin: 5px;
+            border: 2px solid #ab863d81;
+            border-radius: 30px;
+            font-family: 'Bakbak One'
+        }
+
+        button {
+            background-color: #9A6C2775;
+            border: none;
+            color: white;
+            width: 75px;
+            height: 30px;
+            border-radius: 30px;
+            font-family: 'Bakbak One'
+            
+
+        }
+
+        ::placeholder{
+            color: whitesmoke;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #b3782075;
+        }
+
+        #Save {
+            width: 100px;
+        }
+
+        label {
+            color: white;
+            font-family: 'Bakbak One'
+
+        }
+
+        #Updates {
+            width: 15px;
+            height: 15px;
+            font-family: 'Bakbak One'
+            
+        }
+
+        label[for=Updates] {
+            font-size: 12px;            
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://64.media.tumblr.com/7c9568a2ac276f1eada43ec819b35244/4cd04ec2b51f9f6d-0c/s400x600/b2212ac4e64797020e1298bc0f5bdb55cad07676.pnj" alt="Logo Mochi" width="70px" height="70px">
+        </div>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="#">Our Trips</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="UserProfile">
+            <img src="https://64.media.tumblr.com/cb322811648b9034b1cae6ca5b637816/4e808d21df059681-1c/s640x960/55db57cfa5947d09eda64991029674b1b9416ba2.pnj" alt="user profile" width="70px" height="auto">
+        </div>
+    </header>
+
+    
+        <div class="container">
+            <br><h2>My profile</h2>
+            <form method="post">
+                <label for="FirstName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name
+                    <input type="text" name="FirstName" id="FirstName" placeholder="First Name"/></label>
+                <label for="LastName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name
+                    <input type="text" name="LastName" id="LastName" placeholder="Last Name"/></label>
+                <label for="PhoneNumber">Phone Number
+                    <input type="number" name="PhoneNumber" id="PhoneNumber" placeholder="(123)456-7890"/></label>
+                <label for="Username">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username
+                    <input type="text" name="UserName" id="UserName" placeholder="Username"/></label>
+                <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email
+                    <input type="email" name="email" id="Email" placeholder="youremail@domain.com"/></label>
+                <label for="Password">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Password
+                    <input type="password" name="Password" id="Password" placeholder="**********"/></label>
+                    <div>
+                        <input type="checkbox" id="Updates" name="Updates">
+                        <label for="Updates">Send me updates via email</label>
+                      </div>
+
+                <br><button id="Save" type="submit">Save Changes</button><br />
+
+                
+
+            </form>
+        </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mochi Let's Go</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-image: url(https://64.media.tumblr.com/9f7ae588ad2063f2ca884fc1e66efe32/b4c0e53ced51bcc3-c4/s1280x1920/c4a6aee11b5c1118bd08cfbbe522fb7c7b832358.pnj);
+            background-size: cover;
+            margin: 0px;
+        }
+
+        header {
+            display: flex;
+            line-height: 0;
+            justify-content: flex-end;
+            background-color: #EDEAE4;
+            color: #EDE8E3;
+            box-sizing: border-box;
+            margin: 0;
+            padding: 5px 1%;
+            align-items: center;
+            height: 85 px;
+            font-family: 'Bakbak One'
+        }
+
+        .header .navlinks {
+            list-style: none;
+        }
+
+        .header .navlinks li {
+            display: inline-block;
+            padding: 0 20px;
+        }
+
+        .header .navlinks a {
+            font-size: 700;
+            color: #97A88A;
+            text-decoration: none;
+        }
+
+        .logo {
+            margin-right: auto;
+        }
+
+        div.galeria {
+            margin: 60px 20px;
+            float: left;
+            margin-bottom: 0px;
+        }
+        
+        div.galeria img {
+            width: 285px;
+            height: auto;
+        }
+
+        .imagen img {
+            height: 100%;
+            width: 100%;
+        }
+
+        .contendorimgs {
+            display: flex;
+            width: 85%;
+            margin: auto;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .contendorimgs .imagen {
+            width: 32%;
+            position: relative;
+            height: 250px;
+            margin-bottom: 80px;
+        }
+
+        .imagen img {
+            width: 100%;
+            height: 100%;
+            border-radius: 53px;
+        }
+
+        .Desierto, .rio, .campana, .Nevado, .jardin, .tusa {
+            position: absolute;
+            top: 90%;
+            left: 20%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-size: 24px;
+            -webkit-text-stroke: 1px black;
+            font-family: 'Bakbak One'
+        }
+
+        .rio label {
+            cursor: pointer;
+        }
+        
+         .rio label:hover {
+            color: grey;
+        }
+
+        #btn-modal {
+            display: none;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0; left: 0;
+            background-color: rgba(144, 148, 150,  0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
+         #btn-modal:checked ~ .container {
+            display: flex;
+         }
+
+        .content-modal {
+            width: 20%;
+            height: 400px;
+            padding: 20px;
+            background-color: #57714E;
+            border-radius: 4px;
+            font-family: 'Bakbak One';
+            text-align: justify;
+            color: white;
+            border-radius: 30px;
+        }
+
+        h2 {
+            color: #A68037;
+            font-family: 'Bakbak One';
+            font-size: 30px;
+            justify-content: left;
+            margin-left: 10%;
+        }
+
+        #close {
+            font-size: 12px;
+            color: black;
+        }
+
+        #close:hover {
+            color: grey;
+        }
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="https://64.media.tumblr.com/7c9568a2ac276f1eada43ec819b35244/4cd04ec2b51f9f6d-0c/s400x600/b2212ac4e64797020e1298bc0f5bdb55cad07676.pnj" alt="Logo Mochi" width="70px" height="70px">
+        </div>
+        <nav>
+            <ul class="navlinks">
+                <li><a href="#">Our Trips</a></li>
+                <li><a href="#">Bookings</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="UserProfile">
+            <img src="https://64.media.tumblr.com/cb322811648b9034b1cae6ca5b637816/4e808d21df059681-1c/s640x960/55db57cfa5947d09eda64991029674b1b9416ba2.pnj" alt="user profile" width="70px" height="auto">
+        </div>
+    </header>
+
+    <div class="galeria">
+        <div class="contendorimgs">
+            <div class="imagen">
+                <img src="https://64.media.tumblr.com/159544b95a0714f84ecca5fdb58c9a99/b2e9a3bea6c2d498-c0/s1280x1920/f5c00733a92f5a61695ffd685b4bf9fd6d23cff9.jpg" alt="tatacoa">
+                <div class="Desierto">Desierto de <br> la Tatacoa</div>
+            </div>
+            <div class="imagen">
+                <img src="https://64.media.tumblr.com/b01756a53577a3a92f22971f69e6c427/2ab84d845a595002-3f/s500x750/a5fcfaa2df07a5ae650a65c4ba137a3b9e28557c.jpg" alt="melcocho" id="fotorio">
+                <div class="rio">Río <br> Melcocho</div>
+                <div class="rio">
+                    <label for="btn-modal">
+                        Rio <br> Melcocho
+                    </label>
+                </div>
+            
+                <!--Ventana Modal-->
+                <input type="checkbox" id="btn-modal">
+                <div class="container">
+                    <div class="content-modal">
+                        <h2>Rio Melcocho</h2>
+                            </p>The Melcocho River is surrounded by exuberant nature, as well as waterfalls and streams, which make this destination a hidden paradise in the entire department of Antioquia. <br>
+                            Its waters are so crystalline that you can clearly see everything that is at the bottom of its waters. It's amazing!
+                            <br> Book a trip with us, we promise you won'y regret it! <br></p>
+                        <div class="btn-book">
+                            <label for="btn-modal" id="close">Close ☒</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="imagen">
+                <img src="https://64.media.tumblr.com/bc246f40a96497cc68620951590ce776/4e78511357da98d6-07/s1280x1920/d5cc4da964834132b067166c53370acf2feff685.jpg" alt="campanas">
+                <div class="campana">Chorro <br> Campanas</div>
+            </div>
+            <div class="imagen">
+                <img src="https://64.media.tumblr.com/528f9067803cb4b625c5101d8a39198c/e7308b6ffcf0dea2-27/s1280x1920/900d737779536b6cbd22858021767cc4e7ca2a5c.jpg" alt="nevadoisabel">
+                <div class="Nevado">Nevado de <br> Santa Isabel</div>
+            </div>
+            <div class="imagen">
+                <img src="https://64.media.tumblr.com/9fbd85fb64c19d77cc3c4c79a6433155/c910e11e67cba74e-53/s1280x1920/6395d7c7f9ae86a8aec138d8e0720e1a05d78d81.jpg" alt="jardin">
+                <div class="jardin">Jardín <br> 7 Cascadas</div>
+            </div>
+            <div class="imagen">
+                <img src="https://64.media.tumblr.com/ccf037d46c2074ad011592357bbaec73/c44a1f5a0e8ed016-21/s1280x1920/2184fa07e26f8b25f6bae96544588b2741e0a1f2.jpg" alt="tusa">
+                <div class="tusa">Cerro <br> Tusa</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
