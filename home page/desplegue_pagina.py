@@ -17,7 +17,7 @@ INSTALLED_APPS=[
     'django.contrib.users_app'
 ]
 
-CSRF_TRUSTED_ORIGINS=['https.local/mochiletsgo.com'] # aqui necesitamos un hosting para poder enlazar la pagina
+CSRF_TRUSTED_ORIGINS=['https://mochiletsgo.herokuapp.com/'] # aqui necesitamos un hosting para poder enlazar la pagina
 
 ROOT_URL_CONFIG='home.urls' # estamos llamando el codigo que contiene todo el home de la pagina , la direcion principal donde siempre nos va llevar
 
@@ -46,7 +46,7 @@ DATABASE={
         'NAME': BASE_DIR/'db.mysql.1.43.0',
         'USER':'root',
         'PASSWORD':'Mochiletsgo2023',
-        'HOST':'HTTPS:/local/mochiletsgo.com/',
+        'HOST':'https://mochiletsgo.herokuapp.com/',
         'PORT':"5800"
     }
 }
