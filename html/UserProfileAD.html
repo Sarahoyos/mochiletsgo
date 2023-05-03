@@ -51,8 +51,8 @@
             height: 570px;
             margin: auto;
             position: absolute;
-            top: 165px;
-            left: 425px;
+            margin-top: 7%;
+            margin-left: 30%;
             
         }
 
@@ -60,7 +60,7 @@
             color: #A68037;
             font-family: 'Bakbak One';
             font-size: 30px;
-            justify-content: left;
+            justify-content: center;
             margin-left: 10%;
         }
 
@@ -133,6 +133,15 @@
             margin-right: auto;
         }
 
+        .container h2 {
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+
 
     </style>
 </head>
@@ -155,14 +164,14 @@
 
     
         <div class="container">
-            <br><h2>My profile</h2>
+            <br><br><h2>My profile</h2><br>
             <form method="post">
                 <label for="FirstName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Name
                     <input type="text" name="FirstName" id="FirstName" placeholder="First Name"/></label>
                 <label for="LastName">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Last Name
                     <input type="text" name="LastName" id="LastName" placeholder="Last Name"/></label>
                 <label for="PhoneNumber">Phone Number
-                    <input type="number" name="PhoneNumber" id="PhoneNumber" placeholder="(123)456-7890"/></label>
+                    <input type="tel" id="phone" name="phone" placeholder="(123)456-78-90"></label>
                 <label for="Username">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Username
                     <input type="text" name="UserName" id="UserName" placeholder="Username"/></label>
                 <label for="email">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Email
