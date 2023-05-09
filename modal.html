@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,
+            shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
+    <link rel="stylesheet" href="/veterinaria/css/styles.css" >
+
+    <title>Hello, world!</title>
+</head>
+
+<style>
+
+   .rio label {
+    cursor: pointer;
+   }
+
+   .rio label:hover {
+    color: grey;
+   }
+
+   #btn-modal {
+    display: none;
+
+   }
+
+   .container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    background-color: rgba(144, 148, 150,  0.8);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+
+   }
+
+   #btn-modal:checked ~ .container {
+    display: flex;
+   }
+
+   .content-modal {
+    width: 100%;
+    height: 400px;
+    padding: 20px;
+    background-color: green;
+    border-radius: 4px;
+   }
+
+</style>
+
+<body>
+    
+    <!--Boton-->
+    <div class="rio">
+        <label for="btn-modal">
+            Rio <br> Melcocho
+        </label>
+    </div>
+
+    <!--Ventana Modal-->
+    <input type="checkbox" id="btn-modal">
+    <div class="container">
+        <div class="content-modal">
+            <h2>Rio Melcocho</h2>
+            <p>esta es la descripcion</p>
+            <div class="btn-book">
+                <label for="btn-modal">Close</label>
+            </div>
+        </div>
+    </div>
+
+</html>
