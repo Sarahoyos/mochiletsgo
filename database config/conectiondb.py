@@ -1,7 +1,7 @@
 import pyodbc
 server = 'localhost'
-db = 'venture'
-user = 'sarah'
-password = 'w^zXz2@0lZPi'
+db = 'mochiletsgodb'
+user = 'root'
+password = 'mochi2023'
 
 #add in a new database 
