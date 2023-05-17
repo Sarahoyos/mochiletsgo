@@ -12,5 +12,5 @@ def main():
         ) from exc
     execute_from_command_line(sys.argv)
     
-if __name__== '_main_': # si entro check is correcto si no muestreme el error , y redirrecionar a home 
+if __name__== '_main_': # si entro check si correcto si no muestreme el error , y redirrecionar a home 
     main()
