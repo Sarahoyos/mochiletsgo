@@ -1,19 +1,19 @@
 const username = document.getElementById('username')
 const password1 = document.getElementById('password1')
 const password2 = document.getElementById('password2')
-const registro = document.getElementById('signup')  
-const signupbtn = document.getElementById('signupbtn')
+const signinbtn = document.getElementById('signinbtn')
 
 
 function enviarDatos(evento) {
-    evento.preventDefault(); 
+    evento.preventDefault();
     const datos = {
         username: username.value,
-        password1: password1.value, 
+        password1: password1.value,
         password2: password2.value,
-    }   
+
+    }
     console.log('datos',datos)
 };
 
-signup.onsubmit = enviarDatos;
-signupbtn.onclick = enviarDatos;
+login.onsubmit = enviarDatos;
+signinbtn.onclick = enviarDatos;

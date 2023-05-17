@@ -50,8 +50,8 @@
             height: 570px;
             margin: auto;
             position: absolute;
-            top: 165px;
-            left: 425px;
+            top: 20%;
+            left: 33%;
             
         }
 
@@ -130,10 +130,10 @@
             <br><img src="https://64.media.tumblr.com/7c9568a2ac276f1eada43ec819b35244/4cd04ec2b51f9f6d-0c/s400x600/b2212ac4e64797020e1298bc0f5bdb55cad07676.pnj" alt="MochiLogo" height="125" width="125"/><br />
             <h2>Create a new account</h2> <br>
             <p id="HaveAcc">Already have an account? <a href="url" style="color: #36811C;">Sign In</a></p>
-            <form id="registro">
-                <input type="text" name="Username" id="username" placeholder="Username"/><br />
-                <input type="email" name="email" id="email" placeholder="Email"/><br />
-                <input type="password" name="Password" id="password" placeholder="Password"/>
+            <form id="registro" method="post">
+                <input type="email" name="Username" id="username" placeholder="Username"/><br />
+                <input type="password" name="password1" id="password1" placeholder="Password"/><br />
+                <input type="password" name="Password2" id="password2" placeholder="Confirm Password"/>
                 <br><button id="signupbtn" type="submit" data-dismiss="form">Sign Up</button><br />
                 
 
@@ -147,4 +147,4 @@
 </html>
 
 <script src="signup.js">
-setTimeout( function() { window.location.href = "https://mochiletsgo.herokuapp.com/"; }, 5000 );</script>
+setTimeout( function() { window.location.href = "https://mochiletsgo.herokuapp.com/"; }, 2000 );</script>
