@@ -22,7 +22,10 @@ fetch ('https://mochiletsgo.herokuapp.com/signup/', {
     body: JSON.stringify(datos),
 })
 .then((response) => response.json())
-.then 
+.then(data => {
+    // Process the data received from the backend
+    console.log(data);
+  })
 
 signup.onsubmit = enviarDatos;
 signupbtn.onclick = enviarDatos;
