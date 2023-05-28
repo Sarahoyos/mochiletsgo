@@ -47,7 +47,6 @@ urlpatterns=  [
 #si tenemos el hosting
 #db set up 
 
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', Home.as_view())
-]
+#urlpatterns = [
+    #path('admin/', admin.site.urls),
+   # path('', Home.as_view())
