@@ -11,6 +11,7 @@ from django.core.exceptions import ImproperlyConfigured
 from django.utils.deprecation import RemovedInDjango50Warning
 from django.utils.functional import LazyObject, empty
 
+
 ENVIRONMENT_VARIABLE = "DJANGO_SETTINGS_MODULE"
 
 # RemovedInDjango50Warning

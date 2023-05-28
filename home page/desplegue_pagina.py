@@ -1,11 +1,17 @@
 from pathlib import Path
 import os
+from django.conf import settings
 
 BASE_DIR=Path(__file__).resolve().parent.parent # Vamos a utilizar la liberia de path enlanzar con una plataforma para subirlo a un hosting
 
 SECRET_KEY='django-insecure-3+po359r5(0ui)(vvczfb7$gh+fo5=6c2j%e93dz#v!zz&+jnv' #TOKEN 
 
 DEBUG=True # seguridad para que nos de accesso a la pagina 
+
+ALLOWED_HOSTS = [
+    'localhost',
+    'mochiletsgo.herokuapp.com'
+]
 
 INSTALLED_APPS=[
     'django.contrib.admin',
@@ -14,7 +20,10 @@ INSTALLED_APPS=[
     'django.contrib.sessions',
     'django.contrib.request',
     'django.contrib.debug',
-    'django.contrib.users_app'
+    'django.contrib.contenttypes',
+    'django.contrib.staticfiles',
+    'django.contrib.users_app',
+    "mochiletsgo",
 ]
 
 CSRF_TRUSTED_ORIGINS=['https://mochiletsgo.herokuapp.com/'] # aqui necesitamos un hosting para poder enlazar la pagina

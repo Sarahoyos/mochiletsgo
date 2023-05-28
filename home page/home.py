@@ -11,7 +11,7 @@ from django.contrib.auth.decorators import login_required  #Formulario Django
 import os,django
 django.setup()
 # Create your views here.
-
+"mochiletsgo"
 
 def home(request):                         #Si se presiona Home en la navegación se carga el inicio de nuestra página de planificador de tareas
     return render(request, 'home.html')
