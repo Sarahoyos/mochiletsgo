@@ -111,12 +111,52 @@
          .Desierto label:hover {
             color: grey;
         }
+        .campana label {
+            cursor: pointer;
+        }
+        
+         .campana label:hover {
+            color: grey;
+        }
+        .Nevado label {
+            cursor: pointer;
+        }
+        
+         .Nevado label:hover {
+            color: grey;
+        }
+        .jardin label {
+            cursor: pointer;
+        }
+        
+         .jardin label:hover {
+            color: grey;
+        }
+        .tusa label {
+            cursor: pointer;
+        }
+        
+         .tusa label:hover {
+            color: grey;
+        }
 
         #btn-modal {
             display: none;
         }
 
         #MODAL2 {
+            display: none;
+        }
+        #MODAL3 {
+            display: none;
+        }
+        #MODAL4 {
+            display: none;
+        }
+        #MODAL5{
+            display: none;
+        }
+        #MODAL6{
             display: none;
         }
 
@@ -143,12 +183,68 @@
             align-items: center;
             z-index: 100;
         }
+        .container3 {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0; left: 0;
+            background-color: rgba(144, 148, 150,  0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+        .container4 {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0; left: 0;
+            background-color: rgba(144, 148, 150,  0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+        .container5 {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0; left: 0;
+            background-color: rgba(144, 148, 150,  0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+        .container6 {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0; left: 0;
+            background-color: rgba(144, 148, 150,  0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
 
          #btn-modal:checked ~ .container {
             display: flex;
          }
 
          #MODAL2:checked ~ .container2 {
+            display: flex;
+         }
+         #MODAL3:checked ~ .container3 {
+            display: flex;
+         }
+         #MODAL4:checked ~ .container4 {
+            display: flex;
+         }
+         #MODAL5:checked ~ .container5 {
+            display: flex;
+         }
+         #MODAL6:checked ~ .container6 {
             display: flex;
          }
 
@@ -165,6 +261,50 @@
         }
 
         .content-modal2 {
+            width: 20%;
+            height: 400px;
+            padding: 20px;
+            background-color: #57714E;
+            border-radius: 4px;
+            font-family: 'Bakbak One';
+            text-align: justify;
+            color: white;
+            border-radius: 30px;
+        }
+        .content-modal3 {
+            width: 20%;
+            height: 400px;
+            padding: 20px;
+            background-color: #57714E;
+            border-radius: 4px;
+            font-family: 'Bakbak One';
+            text-align: justify;
+            color: white;
+            border-radius: 30px;
+        }
+        .content-modal4 {
+            width: 20%;
+            height: 400px;
+            padding: 20px;
+            background-color: #57714E;
+            border-radius: 4px;
+            font-family: 'Bakbak One';
+            text-align: justify;
+            color: white;
+            border-radius: 30px;
+        }
+        .content-modal5 {
+            width: 20%;
+            height: 400px;
+            padding: 20px;
+            background-color: #57714E;
+            border-radius: 4px;
+            font-family: 'Bakbak One';
+            text-align: justify;
+            color: white;
+            border-radius: 30px;
+        }
+        .content-modal6 {
             width: 20%;
             height: 400px;
             padding: 20px;
@@ -272,7 +412,8 @@
                         </div>
                     </div>
                 </div>
-                
+
+            
                 
                 
             </div>
@@ -300,21 +441,90 @@
                     </div>
                 </div>
             </div>
+            
             <div class="imagen">
                 <img src="https://64.media.tumblr.com/bc246f40a96497cc68620951590ce776/4e78511357da98d6-07/s1280x1920/d5cc4da964834132b067166c53370acf2feff685.jpg" alt="campanas">
                 <div class="campana">Chorro <br> Campanas</div>
+                <div class="campana">
+                    <label for="MODAL3">
+                        Chorro <br> Campanas
+                    </label>
+                </div>
+                <input type="checkbox" id="MODAL3">
+                <div class="container3">
+                    <div class="content-modal3">
+                        <label for="MODAL3" id="CERRAR">X</label>
+                        <h2>Chorro Campanas</h2>
+                            </p> This water would freeze your brains out.
+                            <br> Book this trip with us, we promise you won't regret it! <br></p>
+                        <div class="btn-book">
+                            <br><button id="bookbtn" type="submit" data-dismiss="form">Book</button><br />                            
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="imagen">
                 <img src="https://64.media.tumblr.com/528f9067803cb4b625c5101d8a39198c/e7308b6ffcf0dea2-27/s1280x1920/900d737779536b6cbd22858021767cc4e7ca2a5c.jpg" alt="nevadoisabel">
                 <div class="Nevado">Nevado de <br> Santa Isabel</div>
+                <div class="Nevado">
+                    <label for="MODAL4">
+                        Nevado de <br> Santa Isabel
+                    </label>
+                </div>
+                <input type="checkbox" id="MODAL4">
+                <div class="container4">
+                    <div class="content-modal4">
+                        <label for="MODAL4" id="CERRAR">X</label>
+                        <h2>Nevado de Santa Isabel</h2>
+                            </p> Nevado de Santa Isabel is a shield volcano located in Tolima, Colombia, southwest of Nevado del Ruiz volcano. The volcano is located over the Palestina Fault, that crosscuts.
+                            <br> Book this trip with us, we promise you won't regret it! <br></p>
+                        <div class="btn-book">
+                            <br><button id="bookbtn" type="submit" data-dismiss="form">Book</button><br />                            
+                        </div>
+                    </div>
+                </div>
+
             </div>
             <div class="imagen">
                 <img src="https://64.media.tumblr.com/9fbd85fb64c19d77cc3c4c79a6433155/c910e11e67cba74e-53/s1280x1920/6395d7c7f9ae86a8aec138d8e0720e1a05d78d81.jpg" alt="jardin">
                 <div class="jardin">Jardín <br> 7 Cascadas</div>
+                <div class="jardin">
+                    <label for="MODAL5">
+                        Jardín <br> 7 Cascadas
+                    </label>
+                </div>
+                <input type="checkbox" id="MODAL5">
+                <div class="container5">
+                    <div class="content-modal5">
+                        <label for="MODAL5" id="CERRAR">X</label>
+                        <h2>Jardín 7 Cascadas</h2>
+                            </p> One of the most amazing adventures destination in Colombia that counts with walking more than 10km to get to see 7 beatutiful rainfalls that allows us to connect with mother earth in different way.
+                            <br> Book this trip with us, we promise you won't regret it! <br></p>
+                        <div class="btn-book">
+                            <br><button id="bookbtn" type="submit" data-dismiss="form">Book</button><br />                            
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="imagen">
                 <img src="https://64.media.tumblr.com/ccf037d46c2074ad011592357bbaec73/c44a1f5a0e8ed016-21/s1280x1920/2184fa07e26f8b25f6bae96544588b2741e0a1f2.jpg" alt="tusa">
                 <div class="tusa">Cerro <br> Tusa</div>
+                <div class="tusa">
+                    <label for="MODAL6">
+                        Cerro <br> Tusa
+                    </label>
+                </div>
+                <input type="checkbox" id="MODAL6">
+                <div class="container6">
+                    <div class="content-modal6">
+                        <label for="MODAL6" id="CERRAR">X</label>
+                        <h2>Cerro Tusa</h2>
+                            </p> This is a very challenging and yet a very exciting trip. We encourage you to push your limits and challenge your self with this magical mountain. As you climb up you’ll get to see some mind blowing landscapes and we promise every step will be worth it once you get to the to.
+                            <br> Book this trip with us, we promise you won't regret it! <br></p>
+                        <div class="btn-book">
+                            <br><button id="bookbtn" type="submit" data-dismiss="form">Book</button><br />                            
+                        </div>
+                
             </div>
         </div>
     </div>
