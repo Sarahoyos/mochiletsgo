@@ -11,7 +11,7 @@ from django.contrib.auth.decorators import login_required  #Formulario Django
 import os,django
 django.setup()
 # Create your views here.
-
+"mochiletsgo"
 
 def home(request):                         #Si se presiona Home en la navegación se carga el inicio de nuestra página de planificador de tareas
     return render(request, 'home.html')
@@ -34,7 +34,7 @@ def signup(request):                  #Función para el registro de usuarios nue
                 login(request, user)
                 return redirect('tasks')
             except IntegrityError:                                   #Se despliega los mensajes de error si se trata de registrar un usuario que ya se
-                return render(request, 'signup.html', {              #encontraba registrado en la base de datos con un mensaje de advertencia: "El usuario"
+                return render(request, 'login.html', {              #encontraba registrado en la base de datos con un mensaje de advertencia: "El usuario"
                     'form': UserCreationForm,                        #ya existe y de igual manera si la contraseña ingresada no coincide al confirmarse
                     "error": 'Username already exists'               #le advierte al usuario que revise.
                 })

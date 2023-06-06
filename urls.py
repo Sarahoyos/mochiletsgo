@@ -7,6 +7,8 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views 
+from mochiletsgo.views import Home
+
 
 #formilario de reserva 
 urlpatterns=  [
@@ -40,7 +42,8 @@ urlpatterns=  [
     path('password/',include('auth_views.DATE.complete'('template_date'))),
 ]+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
 
-#todo: miercoles
-#continuar con los formularios
-#si tenemos el hosting
-#db set up 
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+   path('', Home.as_view())
+]
