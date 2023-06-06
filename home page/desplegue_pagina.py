@@ -51,10 +51,10 @@ TEMPLATES=[
 
 DATABASE={
     'default':{
-        'ENGINE':'django.db.backends.SQLite', # estamos haciendo enlance
+        'ENGINE':'django.db.backends.SQLite 3.42.0', # estamos haciendo enlance
         'USER':'root',
         'HOST':'https://mochiletsgo.herokuapp.com/',
-        'PORT':"5800"
+        'PORT':"1080"
     }
 }
 #unit test
