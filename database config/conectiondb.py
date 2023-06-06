@@ -1,7 +1,7 @@
 import pyodbc
-server = 'localhost'
-db = 'mochiletsgodb'
+server = 'SQLite 3.42.0'
+db = 'base_de_datos_mochi'
+driver= 'SQLite JDBC 3.42.0.0'
 user = 'root'
-password = 'mochi2023'
 
-#add in a new database 
+ 

@@ -51,10 +51,8 @@ TEMPLATES=[
 
 DATABASE={
     'default':{
-        'ENGINE':'django.db.backends.mysql8', # estamos haciendo enlance # nos falta
-        'NAME': BASE_DIR/'db.mysql8',
+        'ENGINE':'django.db.backends.SQLite', # estamos haciendo enlance
         'USER':'root',
-        'PASSWORD':'Mochiletsgo2023',
         'HOST':'https://mochiletsgo.herokuapp.com/',
         'PORT':"5800"
     }
@@ -82,3 +80,11 @@ STATIC_URL='/static/'
 STATICFILES_DIRS=[os.path.join(BASE_DIR, 'static')] # administra todo los comandos que tenemos en el desplegue
 
 DEFAULT_AUTO_FIELD='django.db.models.BigAutoField' # Esta haciendo un auto field de los campos en la base de datos
+
+#todo
+# conectar html enlazarlo con el back 
+# conectar el booking html con la base de datos
+# sql
+# hacer otro main para añadir un formulario de profile
+# button de ver mi reserva
+# hacer unittest
