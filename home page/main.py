@@ -20,7 +20,7 @@ def home(request):
     def cerro_tusa(request):              # estamos defining el button de la imagenes de cada ruta     
 
         if request.method == 'GET':                  
-            return render(request, 'cerro tusa.html', {
+            return render(request, 'Cerro Tusa.html', {
             'form': UserCreationForm
         })
 
@@ -29,7 +29,7 @@ def home(request):
             def chorro_campanas(request):              # estamos defining el button de la imagenes de cada ruta     
 
                 if request.method == 'GET':                  
-                 return render(request, 'chorro campanas.html', {
+                 return render(request, 'Chorro Campanas.html', {
             'form': UserCreationForm
         })
 
@@ -38,7 +38,7 @@ def home(request):
             def rio_melcocho(request):              # estamos defining el button de la imagenes de cada ruta    
 
                 if request.method == 'GET':                  
-                    return render(request, 'rio melcocho.html', {
+                    return render(request, 'Rio Melcocho.html', {
             'form': UserCreationForm
         })
 
@@ -47,7 +47,7 @@ def home(request):
             def desierto_de_la_tatacoa(request):              # estamos defining el button de la imagenes de cada ruta    
 
                 if request.method == 'GET':                  
-                    return render(request, 'desierto_de_la_tatacoa.html', {
+                    return render(request, 'Desierto de la Tatacoa.html', {
             'form': UserCreationForm
         })
 
@@ -56,7 +56,7 @@ def home(request):
              def jardin_7_cascadas(request):              # estamos defining el button de la imagenes de cada ruta    
 
                 if request.method == 'GET':                  
-                    return render(request, 'jardin_7_cascadas.html', {
+                    return render(request, 'Jardin 7 Cascadas.html', {
             'form': UserCreationForm
         })
 
@@ -65,7 +65,7 @@ def home(request):
             def nevado_santa_isabel(request):              # estamos defining el button de la imagenes de cada ruta    
 
                 if request.method == 'GET':                  
-                    return render(request, 'nevado_santa_isabel.html', {
+                    return render(request, 'Nevado Santa Isabel.html', {
             'form': UserCreationForm
         })
 
