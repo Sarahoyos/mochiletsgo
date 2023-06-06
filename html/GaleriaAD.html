@@ -104,7 +104,19 @@
             color: grey;
         }
 
+        .Desierto label {
+            cursor: pointer;
+        }
+        
+         .Desierto label:hover {
+            color: grey;
+        }
+
         #btn-modal {
+            display: none;
+        }
+
+        #MODAL2 {
             display: none;
         }
 
@@ -120,11 +132,39 @@
             z-index: 100;
         }
 
+        .container2 {
+            width: 100%;
+            height: 100vh;
+            position: fixed;
+            top: 0; left: 0;
+            background-color: rgba(144, 148, 150,  0.8);
+            display: none;
+            justify-content: center;
+            align-items: center;
+            z-index: 100;
+        }
+
          #btn-modal:checked ~ .container {
             display: flex;
          }
 
+         #MODAL2:checked ~ .container2 {
+            display: flex;
+         }
+
         .content-modal {
+            width: 20%;
+            height: 400px;
+            padding: 20px;
+            background-color: #57714E;
+            border-radius: 4px;
+            font-family: 'Bakbak One';
+            text-align: justify;
+            color: white;
+            border-radius: 30px;
+        }
+
+        .content-modal2 {
             width: 20%;
             height: 400px;
             padding: 20px;
@@ -151,7 +191,18 @@
             margin-left: 90%;
         }
 
+        #CERRAR {
+            font-size: 20px;
+            color: black;   
+            margin-left: 90%;
+        }
+
         #close:hover {
+            color: grey;
+            cursor: pointer;
+        }
+
+        #CERRAR:hover {
             color: grey;
             cursor: pointer;
         }
@@ -202,6 +253,28 @@
             <div class="imagen">
                 <img src="https://64.media.tumblr.com/159544b95a0714f84ecca5fdb58c9a99/b2e9a3bea6c2d498-c0/s1280x1920/f5c00733a92f5a61695ffd685b4bf9fd6d23cff9.jpg" alt="tatacoa">
                 <div class="Desierto">Desierto de <br> la Tatacoa</div>
+                <div class="Desierto">
+                    <label for="MODAL2">
+                        Desierto de <br> la Tatacoa
+                    </label>
+                </div>
+                <input type="checkbox" id="MODAL2">
+                <div class="container2">
+                    <div class="content-modal2">
+                        <label for="MODAL2" id="CERRAR">X</label>
+                        <h2>Desierto de la tatacoa</h2>
+                            </p>This is one of the most challenging destinations that we can encounter in Colombia because of its hot wheather,
+                            but also is where we can find beautiful and unique dessert landscapes that will make you feel like you're on a different
+                            planet.
+                            <br> Book this trip with us, we promise you won't regret it! <br></p>
+                        <div class="btn-book">
+                            <br><button id="bookbtn" type="submit" data-dismiss="form">Book</button><br />                            
+                        </div>
+                    </div>
+                </div>
+                
+                
+                
             </div>
             <div class="imagen">
                 <img src="https://64.media.tumblr.com/b01756a53577a3a92f22971f69e6c427/2ab84d845a595002-3f/s500x750/a5fcfaa2df07a5ae650a65c4ba137a3b9e28557c.jpg" alt="melcocho" id="fotorio">
@@ -220,9 +293,9 @@
                         <h2>Rio Melcocho</h2>
                             </p>The Melcocho River is surrounded by exuberant nature, as well as waterfalls and streams, which make this destination a hidden paradise in the entire department of Antioquia. <br>
                             Its waters are so crystalline that you can clearly see everything that is at the bottom of its waters. It's amazing!
-                            <br> Book a trip with us, we promise you won'y regret it! <br></p>
+                            <br> Book this trip with us, we promise you won't regret it! <br></p>
                         <div class="btn-book">
-                            <br><button id="signupbtn" type="submit" data-dismiss="form">Sign Up</button><br />                            
+                            <br><button id="bookbtn" type="submit" data-dismiss="form">Book</button><br />                            
                         </div>
                     </div>
                 </div>
