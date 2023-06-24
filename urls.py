@@ -7,7 +7,8 @@ from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib.auth import views as auth_views 
-from mochiletsgo.views import Home
+#from mochiletsgo.views import Home
+ENVIRONMENT_VARIABLE = "DJANGO_SETTINGS_MODULE"
 
 
 #formilario de reserva 

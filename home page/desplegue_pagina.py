@@ -1,6 +1,8 @@
 from pathlib import Path
 import os
 from django.conf import settings
+ENVIRONMENT_VARIABLE = "DJANGO_SETTINGS_MODULE"
+
 
 BASE_DIR=Path(__file__).resolve().parent.parent # Vamos a utilizar la liberia de path enlanzar con una plataforma para subirlo a un hosting
 
@@ -23,12 +25,14 @@ INSTALLED_APPS=[
     'django.contrib.contenttypes',
     'django.contrib.staticfiles',
     'django.contrib.users_app',
-    "mochiletsgo",
+    'mochiletsgo',
+    'django_settings_module',
+
 ]
 
 CSRF_TRUSTED_ORIGINS=['https://mochiletsgo.herokuapp.com/'] # aqui necesitamos un hosting para poder enlazar la pagina
 
-ROOT_URL_CONFIG='https://mochiletsgo.herokuapp.com/home/' # estamos llamando el codigo que contiene todo el home de la pagina , la direcion principal donde siempre nos va llevar
+ROOT_URL_CONFIG='https://mochiletsgo.herokuapp.com/' # estamos llamando el codigo que contiene todo el home de la pagina , la direcion principal donde siempre nos va llevar
 
 TEMPLATES=[
     {
@@ -67,7 +71,7 @@ AUTH_PASSWORD_VALIDATORS=[
         'VALIDATOR_CAPS_LOWER': 'django.contrib.auth.password_validation.CapsLowerValidator',          # Validar si contrasena tiene caps or lower case letters
     }
 ]
-LANGUAGUE_CODE='es'
+LANGUAGUE_CODE='en-us'
 
 TIME_ZONE='America/Bogota'
 
